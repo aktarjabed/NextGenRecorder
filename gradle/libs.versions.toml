@@ -1,0 +1,42 @@
+[versions]
+androidGradlePlugin = "8.5.0"
+kotlin = "1.9.25"
+core-ktx = "1.13.1"
+compose-bom = "2024.06.00"
+
+[libraries]
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
+androidx-lifecycle-runtime = "androidx.lifecycle:lifecycle-runtime-ktx:2.8.5"
+androidx-activity-compose = "androidx.activity:activity-compose:1.9.3"
+
+# Compose
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "compose-bom" }
+androidx-compose-ui = { module = "androidx.compose.ui:ui" }
+androidx-compose-material3 = { module = "androidx.compose.material3:material3"}
+androidx-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling-preview" }
+
+# CameraX
+androidx-camera-core = "androidx.camera:camera-core:1.4.0"
+androidx-camera-camera2 = "androidx.camera:camera-camera2:1.4.0"
+androidx-camera-lifecycle = "androidx.camera:camera-lifecycle:1.4.0"
+androidx-camera-video = "androidx.camera:camera-video:1.4.0"
+androidx-camera-view = "androidx.camera:camera-view:1.4.0"
+
+# ML Kit
+google-mlkit-face-detection = "com.google.mlkit:face-detection:16.1.7"
+
+# Room
+androidx-room-runtime = "androidx.room:room-runtime:2.6.1"
+androidx-room-compiler = "androidx.room:room-compiler:2.6.1"
+androidx-room-ktx = "androidx.room:room-ktx:2.6.1"
+
+# Koin
+koin-android = "io.insert-koin:koin-android:3.5.6"
+koin-core = "io.insert-koin:koin-core:3.5.6"
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-services = { id = "com.google.gms.google-services", version = "4.4.1" }
+firebase-crashlytics = { id = "com.google.firebase.crashlytics", version = "2.9.9" }
